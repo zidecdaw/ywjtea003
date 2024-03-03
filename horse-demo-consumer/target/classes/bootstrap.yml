@@ -1,0 +1,46 @@
+#spring:
+#  application:
+#    name: horse-demo-consumer
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/studentms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.jdbc.Driver
+#mybatis-plus:
+#  mapper-locations: mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: true
+#  type-aliases-package: com.msb.business.model.entity
+#
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/studentms?setUnicode=true&characterEncoding=utf8&useAffectedRows=true
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.msb.business.model.entity
+  mapper-locations: classpath:mapper/*.xml
+
+
+#    druid:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      username: root
+#      password: 123456
+#      url: jdbc:mysql://localhost:3306/studentms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+
+#  cloud:
+#    nacos:
+#      discovery:
+#        enabled: true
+#        service: ${spring.application.name}
+#        server-addr: 124.71.82.144:8848
+#      config:
+#        name: horse-demo-consumer
+#        file-extension: yml
+#        server-addr: 124.71.82.144:8848
+#        namespace: ${spring.profiles.active}
+#        shared-configs: db-config.yml,dubbo-config.yml

@@ -1,0 +1,11 @@
+com\msb\business\DemoConsumerApplication.class
+com\msb\business\model\dto\HorseUserDTO.class
+com\msb\business\client\TestClient.class
+com\msb\business\mapper\HorseUserMapper.class
+com\msb\business\service\convert\HorseUserConvert.class
+com\msb\business\controller\HorseUserController.class
+com\msb\business\model\vo\HorseUserVO.class
+com\msb\business\service\HorseUserService.class
+com\msb\business\model\entity\HorseUser.class
+com\msb\business\client\DubboServiceClient.class
+com\msb\business\service\convert\HorseUserConvertImpl.class
